@@ -15,7 +15,7 @@ download::
 	gh run download $(ID)
 
 left::
-	cp firmware/corne_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO
+	cp firmware/corne_tp_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO
 
 right::
-	cp firmware/corne_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO
+	cp firmware/corne_tp_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO
