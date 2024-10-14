@@ -321,9 +321,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &trans       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
-&trans  &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &trans       &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
-&trans  &kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &trans     &kp LC(B)    &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
+&trans  &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
+&trans  &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
+&trans  &kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans       &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
                               &trans                 &trans     &trans       &trans     &trans         &trans
             >;
         };
@@ -359,7 +359,7 @@
     // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
         &trans                   &none                    &none                    &none                    &msc SCRL_DOWN           &none                         &none                    &msc SCRL_DOWN           &none                    &none                    &trans                    &trans
     // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
-                                                                                    &mkp LCLK                &mkp RCLK                &mkp MCLK                     &mkp MCLK                &mkp LCLK                &mkp RCLK
+                                                                                   &trans                   &trans                   &trans                        &mkp LCLK                &trans                   &mkp RCLK
     //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
           >;
         };
@@ -380,7 +380,7 @@
     // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
         &trans                   &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans                    &trans
     // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
-                                                                                    &trans                  &trans                   &trans                        &mkp LCLK                &mkp RCLK                &mkp MCLK
+                                                                                   &trans                   &trans                   &trans                        &mkp LCLK                &trans                   &mkp RCLK
     //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
           >;
         };
