@@ -18,9 +18,9 @@
 // BEGIN TRACKPOINT
 #define BASE 0
 #define LOWER 1
-#define MOUSE_KEYS 2
-#define MOUSE_TP 3
-#define MOUSE_TP_SET 4
+#define MOUSE_KEYS 5
+#define MOUSE_TP 6
+#define MOUSE_TP_SET 7
 
 /*
  * Defines to enable/disable features
