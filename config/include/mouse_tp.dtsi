@@ -94,7 +94,7 @@
 
       // How long to wait, after the last mouse movement, before deactivating
       // the layer (Default: 250)
-      layer-toggle-timeout-ms = <250>;
+      layer-toggle-timeout-ms = <750>;
     };
 
 
