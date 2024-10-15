@@ -242,6 +242,17 @@
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <36 41>;
         };
+
+        left_click {
+            bindings = <&mkp LCLK>
+            key-positions = <RH0 RH1>
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>
+            key-positions = <RH1 RH2>
+        };
+
     };
 
     behaviors {
