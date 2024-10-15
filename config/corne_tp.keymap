@@ -244,13 +244,13 @@
         };
 
         left_click {
-            bindings = <&mkp LCLK>
-            key-positions = <RH0 RH1>
+            bindings = <&mkp LCLK>;
+            key-positions = <RH0 RH1>;
         };
 
         right_click {
-            bindings = <&mkp RCLK>
-            key-positions = <RH1 RH2>
+            bindings = <&mkp RCLK>;
+            key-positions = <RH1 RH2>;
         };
 
     };
