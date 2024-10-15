@@ -248,6 +248,11 @@
             key-positions = <RH0 RH1>;
         };
 
+        middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <RH1 RB0>;
+        };
+
         right_click {
             bindings = <&mkp RCLK>;
             key-positions = <RH1 RH2>;
