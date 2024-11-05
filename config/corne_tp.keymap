@@ -260,7 +260,7 @@
 
         control_b {
           bindings = <&kp LC(B)>;
-          key-positions = <LB0 RB4>;
+          key-positions = <LB4 RB4>;
         };
 
     };
