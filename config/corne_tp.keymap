@@ -258,6 +258,11 @@
             key-positions = <RH1 RH2>;
         };
 
+        control_b {
+          bindings = <&kp LC(B)>;
+          key-positions = <LB0 RB4>;
+        };
+
     };
 
     behaviors {
@@ -265,14 +270,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "THUMB_0";
             #binding-cells = <0>;
-            bindings = <&sl 2>, <&caps_word>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
 
         thumb_1: thumb_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "THUMB_1";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
         };
 
         paren: paren {
@@ -300,27 +305,15 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
             bindings = <
 &none  &kp Q               &kp W                &kp E            &kp R                 &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                    &none
 &none  &kp A               &kp S                &kp D            &kp F                 &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &tap_colon               &none
-&none  &hmsl LEFT_SHIFT Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &hmsr RIGHT_SHIFT SLASH  &none
-                                                &thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE            &mo 2                 &kp BACKSPACE         &kp LC(B)
+&none  &kp Z               &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH                &none
+                                                &thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE            &mo 2                 &kp BACKSPACE         &thumb_1
             >;
         };
 
         lower_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp SINGLE_QUOTE   &trans
 &trans  &kp F1  &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp DOUBLE_QUOTES  &trans
@@ -330,12 +323,6 @@
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &trans  &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
 &trans  &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
