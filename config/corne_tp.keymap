@@ -311,6 +311,7 @@
 &kp Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH 
 &thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE             &mo 2                 &kp BACKSPACE         &thumb_1
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
 
         lower_layer {

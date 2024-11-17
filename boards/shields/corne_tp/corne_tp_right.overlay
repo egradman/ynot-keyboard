@@ -20,6 +20,10 @@
         ;
 };
 
+&encoder_right {
+    status = "okay";
+};
+
 
 /*
  * PS/2 Mouse / Trackpoint - User Configuration
