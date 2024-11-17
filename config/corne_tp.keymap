@@ -306,10 +306,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W                &kp E            &kp R                 &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P     
-&kp A               &kp S                &kp D            &kp F                 &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &tap_colon
-&kp Z               &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH 
-                                                &thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE            &mo 2                 &kp BACKSPACE         &thumb_1
+&kp Q  &kp W                &kp E            &kp R                 &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P     
+&kp A  &kp S                &kp D            &kp F                 &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &tap_colon
+&kp Z  &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH 
+&thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE             &mo 2                 &kp BACKSPACE         &thumb_1
             >;
         };
 
