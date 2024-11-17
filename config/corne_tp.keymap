@@ -220,27 +220,27 @@
 
         numlayer {
             bindings = <&sl 4>;
-            key-positions = <15 16>;
+            key-positions = <LM1 LM2>;
         };
 
         homerow_hyperspace {
             bindings = <&kp LS(LA(LC(LG(SPACE))))>;
-            key-positions = <37 40>;
+            key-positions = <LH1 RH1>;
         };
 
         cmd_space {
             bindings = <&kp LG(SPACE)>;
-            key-positions = <17 18>;
+            key-positions = <LM0 RM0>;
         };
 
         return {
             bindings = <&kp RETURN>;
-            key-positions = <21 20>;
+            key-positions = <RM2 RM3>;
         };
 
         hyper {
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
-            key-positions = <36 41>;
+            key-positions = <LH2 RH2>;
         };
 
         left_click {
