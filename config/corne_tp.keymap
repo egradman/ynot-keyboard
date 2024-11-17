@@ -10,7 +10,7 @@
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 100
 
-#include "zmk-helpers/key-labels/42.h"                                      // key-position labels
+#include "zmk-helpers/key-labels/36.h"                                      // key-position labels
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -306,45 +306,45 @@
 
         default_layer {
             bindings = <
-&none  &kp Q               &kp W                &kp E            &kp R                 &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P                    &none
-&none  &kp A               &kp S                &kp D            &kp F                 &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &tap_colon               &none
-&none  &kp Z               &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH                &none
+&kp Q               &kp W                &kp E            &kp R                 &kp T                  &kp Y                 &kp U                 &kp I                 &kp O                   &kp P     
+&kp A               &kp S                &kp D            &kp F                 &kp G                  &kp H                 &kp J                 &kp K                 &kp L                   &tap_colon
+&kp Z               &hml LEFT_CONTROL X  &hml LEFT_ALT C  &hml LEFT_COMMAND V   &hml LEFT_CONTROL B    &hmr RIGHT_CONTROL N  &hmr RIGHT_COMMAND M  &hmr RIGHT_ALT COMMA  &hmr RIGHT_CONTROL DOT  &kp SLASH 
                                                 &thumb_0         &hmr LEFT_GUI ESCAPE  &lt 1 SPACE            &mo 2                 &kp BACKSPACE         &thumb_1
             >;
         };
 
         lower_layer {
             bindings = <
-&trans  &trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp SINGLE_QUOTE   &trans
-&trans  &kp F1  &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp DOUBLE_QUOTES  &trans
-&trans  &kp F8  &kp F9      &kp F10     &kp F11     &kp F12    &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans             &trans
+&trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp SINGLE_QUOTE
+&kp F1  &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp DOUBLE_QUOTES
+&kp F8  &kp F9      &kp F10     &kp F11     &kp F12    &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
                             &trans      &trans      &trans     &trans         &trans                 &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&trans  &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER      &trans
-&trans  &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR       &trans
-&trans  &kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans       &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH  &trans
+&kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
+&kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR
+&kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans       &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
                               &trans                 &trans     &trans       &trans     &trans         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP    &trans
-&trans  &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN  &trans
-&trans  &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &trans             &trans
+&kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
+&kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN
+&sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
                                                   &trans        &trans            &trans    &trans         &trans                &trans
             >;
         };
 
         layer_4 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans        &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-&trans  &trans        &kp LEFT_GUI  &trans        &trans        &trans        &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR    &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH   &trans
+&trans        &trans        &trans        &trans        &trans        &kp N0     &kp N1  &kp N2  &kp N3  &kp PERIOD
+&trans        &kp LEFT_GUI  &trans        &trans        &trans        &kp PLUS   &kp N4  &kp N5  &kp N6  &kp STAR
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &kp MINUS  &kp N7  &kp N8  &kp N9  &kp SLASH
                                     &trans        &trans        &trans        &kp N0     &trans  &trans
             >;
         };
@@ -355,15 +355,10 @@
         MouseKeys_layer {
           display-name = "MouseKeys";
           bindings = <
-    // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮    ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮
-        U_TOG_TP_SET             U_TOG_TP_SET             &none                    &mmv MOVE_UP             &msc SCRL_UP             &none                         &none                    &msc SCRL_UP             &mmv MOVE_UP             &none                    U_TOG_TP_SET              U_TOG_TP_SET
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &trans                   &none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none                         &none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT          &none                     &trans
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &trans                   &none                    &none                    &none                    &msc SCRL_DOWN           &none                         &none                    &msc SCRL_DOWN           &none                    &none                    &trans                    &trans
-    // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
+U_TOG_TP_SET             &none                    &mmv MOVE_UP             &msc SCRL_UP
+&none                    &mmv MOVE_LEFT           &mmv MOVE_DOWN           &mmv MOVE_RIGHT
+&none                    &none                    &none                    &msc SCRL_DOWN
                                                                                    &trans                   &trans                   &trans                        &mkp LCLK                &trans                   &mkp RCLK
-    //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
           >;
         };
 
@@ -376,15 +371,10 @@
         MouseTP_layer {
           display-name = "TP";
           bindings = <
-    // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮    ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮
-        &trans                   &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans                    &trans
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &trans                   &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans                    &trans
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        &trans                   &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans                    &trans
-    // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
+&trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans
+&trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans
+&trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                   &trans                   &trans
                                                                                    &trans                   &trans                   &trans                        &trans                   &trans                   &trans
-    //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
           >;
         };
 
@@ -392,15 +382,10 @@
         MouseSettings_layer {
           display-name = "TP Set";
           bindings = <
-    // ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮    ╭────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────╮
-        U_TOG_TP_SET             U_TOG_TP_SET             &none                    U_MSS_TP_S_D             U_MSS_TP_S_I             U_MSS_TP_PT_I                 U_MSS_TP_PT_I            U_MSS_TP_S_D             U_MSS_TP_S_I             &none                    U_TOG_TP_SET              U_TOG_TP_SET
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        U_MSS_RESET              U_MSS_RESET              &none                    U_MSS_TP_NI_D            U_MSS_TP_NI_I            U_MSS_TP_PT_D                 U_MSS_TP_PT_D            U_MSS_TP_NI_D            U_MSS_TP_NI_I            &none                    U_MSS_RESET               U_MSS_RESET
-    // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
-        U_MSS_LOG                U_MSS_LOG                &none                    U_MSS_TP_V6_D            U_MSS_TP_V6_I            &none                         &none                    U_MSS_TP_V6_D            U_MSS_TP_V6_I            &none                    U_MSS_LOG                 U_MSS_LOG
-    // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
+U_TOG_TP_SET             &none                    U_MSS_TP_S_D             U_MSS_TP_S_I             U_MSS_TP_PT_I                 U_MSS_TP_PT_I            U_MSS_TP_S_D             U_MSS_TP_S_I             &none                    U_TOG_TP_SET
+U_MSS_RESET              &none                    U_MSS_TP_NI_D            U_MSS_TP_NI_I            U_MSS_TP_PT_D                 U_MSS_TP_PT_D            U_MSS_TP_NI_D            U_MSS_TP_NI_I            &none                    U_MSS_RESET
+U_MSS_LOG                &none                    U_MSS_TP_V6_D            U_MSS_TP_V6_I            &none                         &none                    U_MSS_TP_V6_D            U_MSS_TP_V6_I            &none                    U_MSS_LOG
                                                                                     &trans                  &trans                   &trans                        &mkp LCLK                &mkp RCLK                &mkp MCLK
-    //                                                                            ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
           >;
         };
 
