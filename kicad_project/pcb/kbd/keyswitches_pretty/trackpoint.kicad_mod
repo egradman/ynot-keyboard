@@ -1,0 +1,112 @@
+(footprint "trackpoint"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4d4b60b4-d4f2-442f-a394-e88b871927e6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "trackpoint"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2f89f1c8-5f64-4ee4-967c-fac644c1df4b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a3fbfbc8-3b46-4820-8e92-ca99b7bd05f5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21f6d627-da32-4db1-a097-77a1197ea7b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4858646a-fe0e-487f-a8e8-a693eabc5532")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2d38801a-18bc-43bd-bfd2-b7fd3b113fef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 8 90)
+		(size 0.5 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "8a1ef9fd-5cad-4bdc-befe-5b018b0fe655")
+	)
+	(pad "2" smd rect
+		(at 0 7 90)
+		(size 0.5 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "46bc08c9-996b-414a-888c-247f535e8d2d")
+	)
+	(pad "6" smd rect
+		(at 0 6 90)
+		(size 0.5 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b8fc4482-0c98-4281-9f80-6f16387a9029")
+	)
+	(pad "7" smd rect
+		(at 0 5 90)
+		(size 0.5 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "a06b2770-0f08-4357-8d4f-612fc85880ed")
+	)
+	(pad "8" smd rect
+		(at 0 4 90)
+		(size 0.5 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c89d597f-26db-4000-bdd8-5b3f858f557b")
+	)
+)

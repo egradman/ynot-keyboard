@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/kbd/kicad-footprints/kbd.pretty")(options "")(descr ""))
+  (lib (name "keeblib")(type "KiCad")(uri "${KIPRJMOD}/keyboards/keeblib.pretty")(options "")(descr ""))
+  (lib (name "keebMCU")(type "KiCad")(uri "${KIPRJMOD}/keyboards/keebMCU.pretty")(options "")(descr ""))
+  (lib (name "nice-nano-kicad")(type "KiCad")(uri "${KIPRJMOD}/nice-nano-kicad")(options "")(descr ""))
+)
