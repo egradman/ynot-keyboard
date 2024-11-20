@@ -2,7 +2,7 @@
 
 This is the repo for my "ynot" keyboard.
 
-![[ynot.png]]
+![ynot.png](image)
 
 it uses:
 
