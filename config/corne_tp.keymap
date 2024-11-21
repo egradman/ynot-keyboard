@@ -6,6 +6,8 @@
 
 #include "zmk-helpers/helper.h"
 
+#define ZMK_MOUSE_SCRL_VAL 140
+
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
 #define HM_PRIOR_IDLE 100
@@ -179,7 +181,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <380>;
+            tap-ms = <150>;
 
         };
 
