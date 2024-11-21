@@ -14,7 +14,7 @@ manifest:
 #      revision: pr-testing/mouse_ps2_module_base
 #      import: app/west.yml
     - name: zmk
-      remote: zmkfirmware
+      remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-helpers
