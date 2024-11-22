@@ -6,7 +6,7 @@
 
 #include "zmk-helpers/helper.h"
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 120
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 80
 
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
