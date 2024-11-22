@@ -105,7 +105,7 @@
     &mouse_ps2 {
 
       // How sensitive the TP is (Default: 128)
-      // tp-sensitivity = <128>;
+      // tp-sensitivity = <168>;
 
 
       // The maximum mouse movement speed the TP will accelarate to
@@ -146,7 +146,7 @@
       // increase battery life and potentially errors in transmissions.
       //
       // These values are allowed: 10,20,40,60,80,100,200
-      // sampling-rate = <60>;
+      sampling-rate = <60>;
 
 
       // Disables clicking.
