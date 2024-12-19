@@ -279,6 +279,15 @@
           key-positions = <LB4 RB4>;
         };
 
+        less_than {
+          bindings = <&kp LESS_THAN>;
+          key-positions = <LT1 LT2 LT3>;
+        };
+
+        greater_than {
+          bindings = <&kp GREATER_THAN>;
+          key-positions = <RT1 RT2 RT3>;
+        };
     };
 
     behaviors {
