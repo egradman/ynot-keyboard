@@ -276,7 +276,7 @@
 
         control_b {
           bindings = <&kp LC(B)>;
-          key-positions = <LB4 RB4>;
+          key-positions = <LM4 RM4>;
         };
 
         less_than {
