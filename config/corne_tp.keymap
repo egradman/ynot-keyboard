@@ -288,22 +288,27 @@
           bindings = <&kp GREATER_THAN>;
           key-positions = <RT1 RT2 RT3>;
         };
+
+        caps_word {
+          key-positions = <LM0 LB0>;
+          bindings = <&caps_word>;
+        }
     };
 
     behaviors {
-        thumb_0: thumb_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "THUMB_0";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
-        };
+        //thumb_0: thumb_0 {
+        //    compatible = "zmk,behavior-tap-dance";
+        //    label = "THUMB_0";
+        //    #binding-cells = <0>;
+        //    bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+        //};
 
-        thumb_1: thumb_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "THUMB_1";
-            #binding-cells = <0>;
-            bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
-        };
+        //thumb_1: thumb_1 {
+        //    compatible = "zmk,behavior-tap-dance";
+        //    label = "THUMB_1";
+        //    #binding-cells = <0>;
+        //    bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
+        //};
 
         paren: paren {
             compatible = "zmk,behavior-hold-tap";
@@ -352,8 +357,8 @@
             bindings = <
 &kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
 &kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR
-&kp LG(V)  &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans       &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
-                              &trans                 &trans     &trans       &trans     &trans         &trans
+kp LG(V)   &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans             &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
+                      &trans                 &trans     &trans             &trans     &trans         &trans
             >;
         };
 
