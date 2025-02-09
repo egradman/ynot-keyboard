@@ -289,9 +289,9 @@
           key-positions = <RT1 RT2 RT3>;
         };
 
-        caps_word {
-          key-positions = <LM0 LB0>;
+        caps_word_combo {
           bindings = <&caps_word>;
+          key-positions = <LM0 LB0>;
         };
     };
 
