@@ -292,7 +292,7 @@
         caps_word {
           key-positions = <LM0 LB0>;
           bindings = <&caps_word>;
-        }
+        };
     };
 
     behaviors {
