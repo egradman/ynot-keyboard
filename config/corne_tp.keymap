@@ -291,7 +291,7 @@
 
         caps_word_combo {
           bindings = <&caps_word>;
-          key-positions = <LM0 LB0>;
+          key-positions = <LB3 LB2>;
         };
     };
 
