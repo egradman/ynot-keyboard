@@ -356,7 +356,7 @@
 
         raise_layer {
             bindings = <
-&kp LG(X)   &kp HOME  &kp UP                 &kp END    &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
+&trans      &kp HOME  &kp UP                 &kp END    &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
 &kp LG(C)   &kp LEFT  &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR
 &kp LG(V)   &trans    &trans                 &trans     &trans             &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
                       &trans                 &trans     &trans             &trans     &trans         &trans
