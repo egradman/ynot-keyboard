@@ -233,7 +233,7 @@
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <5>;
+        timeout-ms = <8>;
 
         numlayer {
             bindings = <&sl 4>;
@@ -347,28 +347,28 @@
 
         lower_layer {
             bindings = <
-&trans  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB    &kp SEMICOLON  &kp LESS_THAN          &kp GREATER_THAN   &kp GRAVE        &kp SINGLE_QUOTE
-&kp F1  &kp F2      &kp F3      &kp F4      &kp F5     &trans         &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp DOUBLE_QUOTES
-&kp F8  &kp F9      &kp F10     &kp F11     &kp F12    &trans         &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-                            &trans      &trans      &trans     &trans         &trans                 &trans
+&kp LG(TAB)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB                  &kp SEMICOLON      &kp SINGLE_QUOTE       &kp DOUBLE_QUOTE   &kp GRAVE        &kp SINGLE_QUOTE
+&kp F1       &kp F2      &kp F3      &kp F4      &kp F5                   &kp LESS_THAN      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SEMICOLON
+&kp F8       &kp F9      &kp F10     &kp F11     &kp F12                  &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+                         &trans      &trans      &trans                   &trans             &trans                 &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&kp LG(X)  &kp LC(W)  &kp UP_ARROW           &kp LC(V)  &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
-&kp LG(C)  &kp LEFT   &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR
-&kp LG(V)   &trans     &kp LS(LA(LC(LG(D))))  &trans     &trans             &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
+&kp LG(X)   &kp HOME  &kp UP                 &kp END    &msc SCRL_UP       &kp EQUAL  &kp EXCL       &kp AT       &kp HASH   &kp UNDER
+&kp LG(C)   &kp LEFT  &kp DOWN               &kp RIGHT  &msc SCRL_DOWN     &kp PLUS   &kp DOLLAR     &kp PERCENT  &kp CARET  &kp STAR
+&kp LG(V)   &trans    &trans                 &trans     &trans             &kp MINUS  &kp AMPERSAND  &kp TILDE    &kp PIPE   &kp BACKSLASH
                       &trans                 &trans     &trans             &trans     &trans         &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &trans    &trans         &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
-&kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans    &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN
-&sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans    &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
-                                                  &trans        &trans            &trans    &trans         &trans                &trans
+&kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &kp LC(LS(TAB))    &kp LS(TAB)    &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
+&kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans             &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN
+&sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans             &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
+                                          &trans        &trans            &trans             &trans         &trans                &trans
             >;
         };
 
