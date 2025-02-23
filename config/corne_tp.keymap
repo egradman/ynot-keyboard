@@ -233,7 +233,7 @@
 
     combos {
         compatible = "zmk,combos";
-        timeout-ms = <8>;
+        timeout-ms = <30>;
 
         numlayer {
             bindings = <&sl 4>;
