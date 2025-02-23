@@ -347,7 +347,7 @@
 
         lower_layer {
             bindings = <
-&kp LG(SPACE)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB                  &trans             &kp SINGLE_QUOTE       &kp DOUBLE_QUOTES   &kp GRAVE       &rans
+&kp LG(SPACE)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB                  &trans             &kp SINGLE_QUOTE       &kp DOUBLE_QUOTES   &kp GRAVE       &trans
 &kp F1         &kp F2      &kp F3      &kp F4      &kp F5                   &kp LESS_THAN      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SEMICOLON
 &kp F8         &kp F9      &kp F10     &kp F11     &kp F12                  &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
                            &trans      &trans      &trans                   &trans             &trans                 &trans
