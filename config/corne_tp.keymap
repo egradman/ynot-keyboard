@@ -245,10 +245,10 @@
             key-positions = <LH1 RH1>;
         };
 
-        cmd_space {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <LM0 RM0>;
-        };
+        //cmd_space {
+        //    bindings = <&kp LG(SPACE)>;
+        //    key-positions = <LM0 RM0>;
+        //};
 
         return {
             bindings = <&kp RETURN>;
@@ -280,15 +280,15 @@
           key-positions = <LM4 RM4>;
         };
 
-        less_than {
-          bindings = <&kp LESS_THAN>;
-          key-positions = <LT1 LT2 LT3>;
-        };
+        //less_than {
+        //  bindings = <&kp LESS_THAN>;
+        //  key-positions = <LT1 LT2 LT3>;
+        //};
 
-        greater_than {
-          bindings = <&kp GREATER_THAN>;
-          key-positions = <RT1 RT2 RT3>;
-        };
+        //greater_than {
+        //  bindings = <&kp GREATER_THAN>;
+        //  key-positions = <RT1 RT2 RT3>;
+        //};
 
         caps_word_combo {
           bindings = <&caps_word>;
@@ -347,10 +347,10 @@
 
         lower_layer {
             bindings = <
-&kp LG(TAB)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB                  &kp SEMICOLON      &kp SINGLE_QUOTE       &kp DOUBLE_QUOTES   &kp GRAVE        &kp SINGLE_QUOTE
-&kp F1       &kp F2      &kp F3      &kp F4      &kp F5                   &kp LESS_THAN      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SEMICOLON
-&kp F8       &kp F9      &kp F10     &kp F11     &kp F12                  &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
-                         &trans      &trans      &trans                   &trans             &trans                 &trans
+&kp LG(SPACE)  &kp LA(F1)  &kp LA(F2)  &kp LA(F3)  &kp TAB                  &trans             &kp SINGLE_QUOTE       &kp DOUBLE_QUOTES   &kp GRAVE       &rans
+&kp F1         &kp F2      &kp F3      &kp F4      &kp F5                   &kp LESS_THAN      &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp SEMICOLON
+&kp F8         &kp F9      &kp F10     &kp F11     &kp F12                  &kp GREATER_THAN   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans
+                           &trans      &trans      &trans                   &trans             &trans                 &trans
             >;
         };
 
