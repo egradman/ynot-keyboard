@@ -365,7 +365,7 @@
 
         layer_3 {
             bindings = <
-&kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &kp LC(LS(TAB))    &kp LS(TAB)    &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
+&kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &kp LA(TAB)        &kp LS(TAB)    &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
 &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans             &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN
 &sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans             &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
                                           &trans        &trans            &trans             &trans         &trans                &trans
