@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
 
 #include "zmk-helpers/helper.h"
 
@@ -129,33 +129,33 @@
         // Use faster tapping term and disable some features that may
         // cause false negatives.
 
-        hmsl: hm_shift_l {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+        //hmsl: hm_shift_l {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    #binding-cells = <2>;
+        //    bindings = <&kp>, <&kp>;
 
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>;
+        //    flavor = "balanced";
+        //    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+        //    quick-tap-ms = <175>;
+        //    require-prior-idle-ms = <HM_PRIOR_IDLE>;
+        //    hold-trigger-key-positions = <KEYS_R THUMBS>;
 
-            // hold-trigger-on-release;
-        };
+        //    // hold-trigger-on-release;
+        //};
 
-        hmsr: hm_shift_r {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+        //hmsr: hm_shift_r {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    #binding-cells = <2>;
+        //    bindings = <&kp>, <&kp>;
 
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-            hold-trigger-key-positions = <KEYS_L THUMBS>;
+        //    flavor = "balanced";
+        //    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+        //    quick-tap-ms = <175>;
+        //    require-prior-idle-ms = <HM_PRIOR_IDLE>;
+        //    hold-trigger-key-positions = <KEYS_L THUMBS>;
 
-            // hold-trigger-on-release;
-        };
+        //    // hold-trigger-on-release;
+        //};
 
         /*
          * Non-Positional Homerow Mods
@@ -195,26 +195,26 @@
 
 / {
     macros {
-        moom_full: moom_full {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(LG(SPACE))) &kp SPACE>;
-            label = "MOOM_FULL";
-        };
+        //moom_full: moom_full {
+        //    compatible = "zmk,behavior-macro";
+        //    #binding-cells = <0>;
+        //    bindings = <&kp LC(LA(LG(SPACE))) &kp SPACE>;
+        //    label = "MOOM_FULL";
+        //};
 
-        moom_left: moom_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(SPACE))) &kp LG(LEFT)>;
-            label = "MOOM_LEFT";
-        };
+        //moom_left: moom_left {
+        //    compatible = "zmk,behavior-macro";
+        //    #binding-cells = <0>;
+        //    bindings = <&kp LA(LC(LG(SPACE))) &kp LG(LEFT)>;
+        //    label = "MOOM_LEFT";
+        //};
 
-        moom_right: moom_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(SPACE))) &kp LG(RIGHT_ARROW)>;
-            label = "MOOM_RIGHT";
-        };
+        //moom_right: moom_right {
+        //    compatible = "zmk,behavior-macro";
+        //    #binding-cells = <0>;
+        //    bindings = <&kp LA(LC(LG(SPACE))) &kp LG(RIGHT_ARROW)>;
+        //    label = "MOOM_RIGHT";
+        //};
 
         save_vim: save_vim {
             compatible = "zmk,behavior-macro";
@@ -311,25 +311,25 @@
         //    bindings = <&sk RIGHT_SHIFT>, <&caps_word>;
         //};
 
-        paren: paren {
-            compatible = "zmk,behavior-hold-tap";
-            label = "PAREN";
-            bindings = <&kp>, <&kp>;
+        //paren: paren {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "PAREN";
+        //    bindings = <&kp>, <&kp>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <150>;
+        //    flavor = "tap-preferred";
+        //};
 
-        alpha_ht: alpha_ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "ALPHA_HT";
-            bindings = <&kp>, <&kp>;
+        //alpha_ht: alpha_ht {
+        //    compatible = "zmk,behavior-hold-tap";
+        //    label = "ALPHA_HT";
+        //    bindings = <&kp>, <&kp>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "tap-preferred";
-        };
+        //    #binding-cells = <2>;
+        //    tapping-term-ms = <150>;
+        //    flavor = "tap-preferred";
+        //};
     };
 
     keymap {
@@ -367,7 +367,7 @@
             bindings = <
 &kp C_BRIGHTNESS_INC  &kp LC(LS(LG(N4)))  &kp LC(K)     &trans            &kp LA(TAB)        &kp LS(TAB)    &kp LA(LC(LG(LEFT)))  &kp LA(LC(LG(SPACE)))  &kp LA(LC(LG(RIGHT)))  &kp C_VOLUME_UP
 &kp C_BRIGHTNESS_DEC  &kp LC(H)           &kp LC(J)     &kp LC(L)         &trans             &kp LG(EQUAL)  &trans                &save_vim              &trans                 &kp C_VOLUME_DOWN
-&sk LEFT_SHIFT        &sk LEFT_CONTROL    &sk LEFT_ALT  &sk LEFT_COMMAND  &trans             &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
+&trans                &trans              &trans        &trans            &trans             &kp LG(MINUS)  &trans                &trans                 &trans                 &trans
                                           &trans        &trans            &trans             &trans         &trans                &trans
             >;
         };
